@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,15 +7,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <div class="translate-bar">
+    <div class="container-fluid px-3 px-md-4">
+      <div class="d-flex justify-content-end align-items-center py-2">
+        <div class="translate-widget d-flex align-items-center">
+          <span class="me-2">Translate</span>
+          <div id="google_translate_element" aria-label="Language translation"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Header / Hero Section -->
   <header class="hero">
     <div class="hero-image"></div>
     <div class="hero-content">
-      <img class="intel-logo" src="img/intel-header-logo.svg" alt="Intel Logo" />
+      <img class="intel-logo" src="img/intel-header-logo.svg" alt="Intel white logo used in the header" />
       <p class="eyebrow">Intel sustainability</p>
       <h1>A more sustainable tomorrow.</h1>
       <p class="hero-tagline">Big goals. Real impact.</p>
@@ -26,6 +39,54 @@
     </div>
     <a class="scroll-indicator" href="#timeline">&darr; <span>Explore our goals</span></a>
   </header>
+
+  <section class="impact-grid-section">
+    <div class="container py-5">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <article class="info-card">
+            <div class="info-heading">
+              <span class="info-icon"><i class="bi bi-leaf"></i></span>
+              <h3>Cleaner Energy</h3>
+            </div>
+            <p>
+              We reduce emissions by investing in efficient operations and cleaner,
+              more renewable power sources.
+            </p>
+            <a href="#" class="learn-more-link">Learn More</a>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <article class="info-card">
+            <div class="info-heading">
+              <span class="info-icon"><i class="bi bi-recycle"></i></span>
+              <h3>Smarter Materials</h3>
+            </div>
+            <p>
+              Circular design helps extend product life and reduce waste through
+              better materials and production strategies.
+            </p>
+            <a href="#" class="learn-more-link">Learn More</a>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <article class="info-card">
+            <div class="info-heading">
+              <span class="info-icon"><i class="bi bi-people"></i></span>
+              <h3>People &amp; Communities</h3>
+            </div>
+            <p>
+              Innovation grows stronger when we build opportunities, support skills,
+              and create lasting community impact.
+            </p>
+            <a href="#" class="learn-more-link">Learn More</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Timeline Cards Section -->
   <main id="timeline" class="timeline-section">
@@ -47,7 +108,7 @@
       <div class="timeline-card sustainability-milestone" data-category="people">
       <h2>1968</h2>
       <h3>Intel Founded</h3>
-      <img src="img/1.jpg" alt="Illustration of Intel's early semiconductor technology in 1968" />
+      <img src="img/1.jpg" alt="Illustration showing Intel's early semiconductor technology and founding timeline in 1968" />
       <p>
         Intel is founded to advance semiconductor innovation.
       </p>
@@ -61,7 +122,7 @@
       <div class="timeline-card sustainability-milestone" data-category="people">
       <h2>1971</h2>
       <h3>First Microprocessor</h3>
-      <img src="img/2.jpg" alt="Close-up of an early Intel microprocessor" />
+      <img src="img/2.jpg" alt="Close-up of the first commercial Intel microprocessor introduced in 1971" />
       <p>
         Intel launches the world's first commercial microprocessor.
       </p>
@@ -75,7 +136,7 @@
       <div class="timeline-card sustainability-milestone" data-category="people">
       <h2>1978</h2>
       <h3>8086 Processor</h3>
-      <img src="img/3.jpg" alt="Intel 8086 processor from 1978" />
+      <img src="img/3.jpg" alt="Intel 8086 processor from 1978 used to establish the x86 architecture" />
       <p>
         The 8086 processor establishes Intel's x86 architecture.
       </p>
@@ -89,7 +150,7 @@
       <div class="timeline-card sustainability-milestone" data-category="people">
       <h2>1985</h2>
       <h3>386 Processor</h3>
-      <img src="img/4.jpg" alt="Intel processor on a circuit board" />
+      <img src="img/4.jpg" alt="Intel 386 processor shown on a circuit board for personal computers" />
       <p>
         The 386 brings 32-bit performance to personal computers.
       </p>
@@ -103,7 +164,7 @@
       <div class="timeline-card sustainability-milestone" data-category="climate">
       <h2>2006</h2>
       <h3>Peak GHG Emissions</h3>
-      <img src="img/5.jpg" alt="Intel semiconductor technology and circuit board" />
+      <img src="img/5.jpg" alt="Intel semiconductor technology and circuit board representing peak greenhouse gas emissions" />
       <p>
         Intel reaches its highest annual operational greenhouse gas emissions.
       </p>
@@ -117,7 +178,7 @@
       <div class="timeline-card" data-category="circular">
       <h2>2020</h2>
       <h3>RISE Strategy</h3>
-      <img src="img/6.jpg" alt="Close-up of modern processor hardware" />
+      <img src="img/6.jpg" alt="Close-up of modern processor hardware representing Intel's RISE strategy" />
       <p>
         Intel launches its RISE strategy and 2030 sustainability goals.
       </p>
@@ -131,7 +192,7 @@
       <div class="timeline-card" data-category="climate">
       <h2>2022</h2>
       <h3>Net-Zero By 2040</h3>
-      <img src="img/7.jpg" alt="Modern Intel processor on a circuit board" />
+      <img src="img/7.jpg" alt="Modern Intel processor on a circuit board highlighting net-zero goals by 2040" />
       <p>
         Intel commits to net-zero Scope 1 and 2 emissions by 2040.
       </p>
@@ -145,7 +206,7 @@
       <div class="timeline-card" data-category="climate">
       <h2>2023</h2>
       <h3>Renewable Electricity</h3>
-      <img src="img/8.jpg" alt="Green circuit board with electronic components" />
+      <img src="img/8.jpg" alt="Green circuit board with electronic components representing renewable electricity progress" />
       <p>
         Intel reaches 99% renewable electricity worldwide.
       </p>
@@ -159,7 +220,7 @@
       <div class="timeline-card" data-category="circular climate">
       <h2>2024</h2>
       <h3>Sustainability Summit</h3>
-      <img src="img/9.jpg" alt="Modern semiconductor components on a circuit board" />
+      <img src="img/9.jpg" alt="Modern semiconductor components on a circuit board representing the sustainability summit" />
       <p>
         Intel brings industry leaders together for its first Sustainability Summit.
       </p>
@@ -173,7 +234,7 @@
       <div class="timeline-card sustainability-milestone" data-category="climate">
       <h2>2040</h2>
       <h3>Net-Zero Operations</h3>
-      <img src="img/11.jpg" alt="Intel processor technology representing future operations" />
+      <img src="img/11.jpg" alt="Intel processor technology representing future net-zero operations and sustainable manufacturing" />
       <p>
         Intel targets net-zero greenhouse gas emissions across global operations.
       </p>
@@ -184,7 +245,167 @@
       </div>
     </div>
   </main>
-  <p class="footer-note">Scroll to explore Intel's sustainability journey.</p>
+  <section class="accordion-section">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-9">
+          <div class="accordion-header text-center mb-4">
+            <p class="newsletter-eyebrow">Learn more</p>
+            <h3>Key sustainability topics</h3>
+          </div>
+
+          <div class="accordion" id="sustainabilityAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Why are emissions important?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#sustainabilityAccordion">
+                <div class="accordion-body">
+                  Reducing emissions helps improve energy efficiency, lower environmental impact, and support a more resilient future for technology manufacturing.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  What does circularity mean?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#sustainabilityAccordion">
+                <div class="accordion-body">
+                  Circularity focuses on reusing materials, extending product life, and reducing waste so valuable resources stay in use longer.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  How do communities benefit?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#sustainabilityAccordion">
+                <div class="accordion-body">
+                  Strong sustainability goals also support skills development, local investment, and inclusive opportunities for people and communities around the world.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter-section">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <div class="newsletter-card">
+            <div class="row align-items-center g-4">
+              <div class="col-12 col-md-6">
+                <p class="newsletter-eyebrow">Stay informed</p>
+                <h3>Subscribe to Intel’s sustainability newsletter</h3>
+              </div>
+              <div class="col-12 col-md-6">
+                <form class="row g-2 align-items-center">
+                  <div class="col-12 col-sm-8">
+                    <label class="visually-hidden" for="newsletter-email">Email address</label>
+                    <input
+                      id="newsletter-email"
+                      type="email"
+                      class="form-control form-control-lg"
+                      placeholder="Enter your email"
+                      aria-label="Email address"
+                    />
+                  </div>
+                  <div class="col-12 col-sm-4 d-grid">
+                    <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container py-4">
+      <div class="row align-items-center g-3">
+        <div class="col-12 col-md-6">
+          <p class="footer-note">Scroll to explore Intel's sustainability journey.</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p class="copyright text-center">© 2026 Intel Corporation. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,es,fr,de,it,ja,ko,zh-CN,ar,hi,pt,ru,he,fa,ur',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+
+    function updatePageDirection() {
+      const html = document.documentElement;
+      const body = document.body;
+      const currentDir = html.getAttribute('dir') || 'ltr';
+      const bodyDir = body.getAttribute('dir') || '';
+      const googleDir = bodyDir || currentDir;
+      const isRtl = /^(ar|fa|he|ur|ps|ku|sd)$/.test(document.documentElement.lang || '')
+        || googleDir === 'rtl'
+        || body.classList.contains('translated-rtl');
+
+      html.setAttribute('dir', isRtl ? 'rtl' : 'ltr');
+      body.setAttribute('dir', isRtl ? 'rtl' : 'ltr');
+      html.setAttribute('lang', document.documentElement.lang || 'en');
+    }
+
+    const observer = new MutationObserver(() => {
+      updatePageDirection();
+    });
+
+    observer.observe(document.body, {
+      attributes: true,
+      childList: true,
+      subtree: true,
+      characterData: true,
+      attributeFilter: ['class', 'dir', 'lang']
+    });
+
+    document.addEventListener('DOMContentLoaded', updatePageDirection);
+    window.addEventListener('load', updatePageDirection);
+
+    const htmlObserver = new MutationObserver(() => {
+      updatePageDirection();
+    });
+
+    htmlObserver.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['lang', 'dir']
+    });
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <script>
     const hero = document.querySelector('.hero');
     const heroContent = document.querySelector('.hero-content');

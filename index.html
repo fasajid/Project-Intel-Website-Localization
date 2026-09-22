@@ -381,28 +381,24 @@
       html.setAttribute('lang', document.documentElement.lang || 'en');
     }
 
-    const observer = new MutationObserver(() => {
-      updatePageDirection();
-    });
-
-    observer.observe(document.body, {
-      attributes: true,
-      childList: true,
-      subtree: true,
-      characterData: true,
-      attributeFilter: ['class', 'dir', 'lang']
-    });
-
     document.addEventListener('DOMContentLoaded', updatePageDirection);
     window.addEventListener('load', updatePageDirection);
 
-    const htmlObserver = new MutationObserver(() => {
-      updatePageDirection();
+    const languageObserver = new MutationObserver((mutations) => {
+      const languageChanged = mutations.some((mutation) => {
+        return mutation.attributeName === 'lang'
+          && mutation.oldValue !== document.documentElement.lang;
+      });
+
+      if (languageChanged) {
+        updatePageDirection();
+      }
     });
 
-    htmlObserver.observe(document.documentElement, {
+    languageObserver.observe(document.documentElement, {
       attributes: true,
-      attributeFilter: ['lang', 'dir']
+      attributeFilter: ['lang'],
+      attributeOldValue: true
     });
   </script>
   <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
